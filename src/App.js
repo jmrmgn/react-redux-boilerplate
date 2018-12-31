@@ -18,7 +18,7 @@ class App extends Component {
                   {
                      this.props.history.map((el) => {
                         return (
-                           <li key={el.id} className="historyItem" onClick={() => this.props.onDeleteItem(el.id)} >
+                           <li key={el.id} className="historyItem" onClick={() => this.props.onDeleteItem(el.id)} title="Click to remove" >
                               {el.age}
                            </li>
                         );
